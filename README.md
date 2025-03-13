@@ -77,6 +77,12 @@ The following pipelines integrate Firecrawl with Open WebUI:
 - Subdomain discovery
 - URL pattern matching
 
+#### **[Firecrawl Data Extraction](./pipelines/firecrawl_extract.py)**
+- Structured data extraction from websites using a specified prompt and schema
+- Supports multiple URLs
+- Options to enable web search, ignore sitemaps, include subdomains, and show sources
+- Customizable scrape options
+
 To use the Firecrawl pipelines, you need to:
 1. Create a Firecrawl account at [https://www.firecrawl.dev/app/api-keys](https://www.firecrawl.dev/app/api-keys)
 2. Generate an API key from the dashboard
