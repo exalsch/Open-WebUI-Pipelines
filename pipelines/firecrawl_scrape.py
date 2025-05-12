@@ -129,7 +129,7 @@ class FirecrawlClient:
                 logger.error(traceback.format_exc())
             raise Exception(f"Request failed: {e}")
 
-class Pipeline:
+class Pipe:
     class Valves(BaseModel):
         FIRECRAWL_API_KEY: str = Field(default="", description="Firecrawl API key")
         FORMATS: str = Field(default="markdown", description="Comma-separated list of formats to scrape")
