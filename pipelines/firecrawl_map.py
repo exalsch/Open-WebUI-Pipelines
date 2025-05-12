@@ -91,7 +91,7 @@ class FirecrawlClient:
                 logger.error(traceback.format_exc())
             raise Exception(f"Request failed: {e}")
 
-class Pipeline:
+class Pipe:
     class Valves(BaseModel):
         FIRECRAWL_API_KEY: str = Field(default="", description="Firecrawl API key")
         URL_LIMIT: int = Field(default=100, description="Maximum number of URLs to process")
